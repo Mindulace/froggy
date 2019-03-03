@@ -1,11 +1,10 @@
 <?php
 
-
-$url = 'https://discordapp.com/api/webhooks/550385983175131156/LeLEyM9NFW_ai-_p_f4HF-UEcXNpDcoIcoPDcl5lgJcYDRkMHngutd6d1S76_FVfgu3r';
-$ch = curl_init($url);
+$config = include 'config.php';
+$ch = curl_init($config['discord']['webhook']);
 
 $jsonData = array(
-    'content' => 'Quaaak.. Denkt an euren :frog: of the day! @everyone'
+    'content' => $config['discord']['message']
 );
 
 $jsonDataEncoded = json_encode($jsonData);

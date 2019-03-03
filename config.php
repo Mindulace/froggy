@@ -10,7 +10,7 @@
 
 return array(
     'discord' => array(
-        'webhook' => 'https://discordapp.com/api/webhooks/550385983175131156/LeLEyM9NFW_ai-_p_f4HF-UEcXNpDcoIcoPDcl5lgJcYDRkMHngutd6d1S76_FVfgu3r',
+        'webhook' => 'https://discordapp.com/api/webhooks/EXAMPLE',
         'message' => 'Quaaak.. Denkt an euren :frog: of the day! @everyone',
     ),
     'general' => array(
