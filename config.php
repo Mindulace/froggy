@@ -1,5 +1,8 @@
 <?php
 /**
+ * FROGGY-BOT       v1.1.0
+ * 
+ * 
  * Webhook:         This is the URL from the discord server.
  * Message:         This is the message, which the bot will be posting.
  * 
