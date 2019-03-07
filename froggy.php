@@ -3,8 +3,14 @@
 $config = include 'config.php';
 $ch = curl_init($config['discord']['webhook']);
 
+if($config['discord']['random_message']) {
+    $message = $config['discord']['messages'][array_rand($config['discord']['messages'])];
+} else {
+    $message = $config['discord']['messages'][0];
+}
+
 $jsonData = array(
-    'content' => $config['discord']['message']
+    'content' => $message
 );
 
 $jsonDataEncoded = json_encode($jsonData);
