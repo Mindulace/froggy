@@ -11,8 +11,12 @@ class froggy
 
     private function checkConfig($config)
     {
-        if (array_key_exists('webhook', $config)) {
-            throw new \Exception('Webhook not defined.')
+        if (!array_key_exists('webhook', $config['discord']) || !isset($config['discord']['webhook'])) {
+            throw new \Exception('Webhook not defined.');
+        }
+
+        if (!array_key_exists('messages', $config['discord']) || !isset($config['discord']['messages'])) {
+            throw new \Exception('Messages not defined.');
         }
     }
 
