@@ -1,6 +1,6 @@
 <?php
 /**
- * FROGGY-BOT       v1.1.0
+ * FROGGY-BOT       v1.2.0
  * 
  * 
  * Webhook:         This is the URL from the discord server.
